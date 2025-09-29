@@ -2,8 +2,8 @@ import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } fr
 import Link from 'next/link'
 const Footer = () => {
   return (
-    <footer className="bg-blue-50 text-black-900">
-      <div className="max-w-6xl mx-auto px-4 py-12">
+    <footer className="bg-blue-50  text-black-900">
+      <div className="w-full mx-auto px-4 py-12">
         
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">

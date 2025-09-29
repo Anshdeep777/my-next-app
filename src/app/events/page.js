@@ -2,10 +2,16 @@ import React from 'react';
 import { IoIosMegaphone } from "react-icons/io";
 import { FaAnglesDown } from "react-icons/fa6";
 import { BadgeQuestionMark } from 'lucide-react';
+import Card from '../component/Card';
+import Card2 from '../component/Card2';
+import SlideShow from '../component/SlideShow';
+import Collaborate from '../component/Collaborate';
+import Footer from '../component/Footer';
 
 const Page = () => {
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/60 flex flex-col items-center relative overflow-hidden">
+
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
@@ -13,7 +19,9 @@ const Page = () => {
         <div className="absolute -bottom-32 left-1/3 w-72 h-72 bg-violet-100 rounded-full mix-blend-multiply filter blur-3xl opacity-25"></div>
       </div>
 
+      {/* Main Content */}
       <div className="relative flex flex-col lg:flex-row items-center justify-center max-w-7xl mx-auto w-full gap-16 py-20 px-8 lg:px-12">
+
         {/* Left Half - Text Content */}
         <div className="lg:w-1/2 flex flex-col items-start gap-6 z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-sm border border-blue-100">
@@ -81,7 +89,7 @@ const Page = () => {
         </div>
       </div>
 
-      {/* WHY JOIN US SECTION WITH QUARTER CIRCLES */}
+      {/* WHY JOIN US SECTION */}
       <div className="w-full min-h-screen bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 pt-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex flex-col items-center">
@@ -122,18 +130,31 @@ const Page = () => {
             </div>
           </div>
         </div>
-       
-     
+      </div>
 
-      <div className="w-full flex items-start ">
-  <div className='px-8 rounded-r-full mt-10 border-2 border-white p-6 bg-white/10 bg-gradient-to-br from-blue-400 to-blue-500 shadow-2xl'>
-    <h1 className="text-5xl font-bold text-white drop-shadow-lg">
-      Register For TECHNEX'25
-    </h1>
-  </div>
-  
+      {/* OUR EVENTS SECTION */}
+      <div className="w-full flex items-start mt-20">
+        <div className="px-8 rounded-r-full border-2 border-white p-6 bg-white/10 bg-gradient-to-br from-blue-400 to-blue-500 shadow-2xl">
+          <h1 className="text-5xl font-bold text-white drop-shadow-lg">
+            OUR EVENTS
+          </h1>
+        </div>
+      </div>
+
+      {/* Placeholder div under OUR EVENTS */}
+      <div className='min-h-screen w-full'>
+      <div className="w-full max-w-5xl mx-auto mt-10 grid grid-cols-2 grid-rows-2 ">
+  {/* Each grid item */}
+  <Card/>
+  <Card2/>
+  <Card/>
+  <Card/>
 </div>
- </div>
+</div>
+<SlideShow/>
+<Collaborate/>
+<Footer/>
+
 
     </div>
   );
