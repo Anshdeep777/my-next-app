@@ -20,8 +20,8 @@ export default function Home() {
           </div>
 
           {/* Title */}
-          <h1 className="text-5xl font-extrabold text-gray-900 mb-3 text-center leading-tight">
-            Beyond <span className="text-blue-600">Mobility</span>
+          <h1 className="text-6xl font-extrabold bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-700 bg-clip-text text-transparent mb-3 text-center leading-tight">
+            Beyond <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 bg-clip-text text-transparent">Mobility</span>
           </h1>
 
           {/* Subtitle */}
@@ -31,7 +31,7 @@ export default function Home() {
 
           {/* CTA Button */}
           <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full shadow-lg transition">
-            Explore Now 🚀
+            Explore Now 
           </button>
         </div>
 

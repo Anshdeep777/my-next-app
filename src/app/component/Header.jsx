@@ -46,7 +46,7 @@ const Header = () => {
                 className={`text-2xl font-light tracking-wide transition-colors duration-300
                   ${scrolled ? 'text-slate-900' : 'text-slate-900'}`}
               >
-                LUXURY
+                SAE
               </span>
             </div>
           </div>
@@ -89,17 +89,14 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button
-              className={`px-8 py-3 text-sm font-medium tracking-wide transition-all duration-300
-              border border-transparent rounded-full
-              ${scrolled
-                ? 'bg-slate-900 text-white hover:bg-slate-800 hover:shadow-lg'
-                : 'bg-white text-slate-900 hover:bg-white/90 hover:shadow-xl'
-              }`}
-            >
-              Contact Us
-            </button>
-          </div>
+  <button
+    className="px-8 py-3 text-sm font-medium tracking-wide transition-all duration-300
+    bg-black text-white border border-transparent rounded-full hover:bg-gray-800 hover:shadow-xl"
+  >
+    Contact Us
+  </button>
+</div>
+
 
           {/* Mobile menu button */}
           <button
