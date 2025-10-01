@@ -1,22 +1,22 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { Megaphone, ChevronRight, Zap, Trophy, Flag, Activity } from 'lucide-react';
-import { BsArrowUpRightCircle } from "react-icons/bs";
+import { Megaphone, ChevronRight, Zap, Trophy, Flag, Activity, ArrowUpRightCircle } from 'lucide-react'; // ✅ Replaced react-icons
+
 const News = () => {
   const [currentNews, setCurrentNews] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
   const newsItems = [
-    <span className="flex items-center gap-1">
+    <span className="flex items-center gap-1" key="1">
       <Trophy className="w-4 h-4 text-yellow-400" /> Formula Grand Prix starting in 2 hours
     </span>,
-    <span className="flex items-center gap-1">
+    <span className="flex items-center gap-1" key="2">
       <Trophy className="w-4 h-4 text-yellow-300" /> Championship standings updated
     </span>,
-    <span className="flex items-center gap-1">
+    <span className="flex items-center gap-1" key="3">
       <Zap className="w-4 h-4 text-blue-400" /> New speed records broken today
     </span>,
-    <span className="flex items-center gap-1">
+    <span className="flex items-center gap-1" key="4">
       <Activity className="w-4 h-4 text-red-400" /> Qualifying rounds live now
     </span>
   ];
@@ -30,7 +30,7 @@ const News = () => {
 
   return (
     <div className="w-full h-[70px] sticky top-0 z-50 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-500 flex items-center justify-between px-6 shadow-lg backdrop-blur-sm border-b border-blue-300/30">
-      
+
       {/* Left side */}
       <div className="flex items-center gap-4">
         <div className="relative ml-5">
@@ -76,7 +76,7 @@ const News = () => {
       >
         <div className="flex items-center gap-2">
           <span className="font-semibold text-[14px]">View All Updates</span>
-          <BsArrowUpRightCircle  className={`w-4 h-4 text-[14px] transition-transform duration-300 group-hover:rotate-45`} />
+          <ArrowUpRightCircle className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45" /> {/* ✅ Replaced */}
         </div>
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </button>
