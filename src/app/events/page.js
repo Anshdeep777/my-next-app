@@ -114,7 +114,7 @@ const Page = () => {
             <div className="relative bg-white/40 backdrop-blur-md rounded-3xl p-8 md:p-10 border border-white/60 shadow-xl">
 
               <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-                Joining SAE events offers an incredible opportunity to gain <span className="font-semibold text-blue-700">real-world exposure</span> to automotive and mobility technologies through hands-on workshops and design sessions. You'll get the chance to innovate, build, and participate in <span className="font-semibold text-indigo-700">national-level competitions</span> like BAJA, SUPRA, and Efficycle while networking with professionals from leading companies such as Tata Motors, Mahindra, Maruti Suzuki, and Bosch.
+                Joining SAE events offers an incredible opportunity to gain <span className="font-semibold text-blue-700">real-world exposure</span> to automotive and mobility technologies through hands-on workshops and design sessions. You will get the chance to innovate, build, and participate in <span className="font-semibold text-indigo-700">national-level competitions</span> like BAJA, SUPRA, and Efficycle while networking with professionals from leading companies such as Tata Motors, Mahindra, Maruti Suzuki, and Bosch.
               </p>
 
               <p className="text-base md:text-lg text-slate-700 leading-relaxed mt-6">
