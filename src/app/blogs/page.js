@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import { BsPen } from "react-icons/bs";
-import { Filter, Clock, ArrowUpRight, TrendingUp, Sparkles } from 'lucide-react';
-import { Lightbulb } from 'lucide-react';
+
+import { Pen, Filter, Clock, ArrowUpRight, TrendingUp, Sparkles, Lightbulb } from 'lucide-react';
+
 import BlogHero from '../component/BlogHero';
 import Footer from '../component/Footer';
 
@@ -90,7 +90,7 @@ const Page = () => {
             <div className="flex items-center justify-center gap-4 flex-col mb-12">
               <div className="relative">
                 <div className="p-5 bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-600 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                  <BsPen className="text-3xl text-white" />
+                  <Pen className="text-3xl text-white" />
                 </div>
                 <div className="absolute -top-1 -right-1">
                   <Sparkles className="w-4 h-4 text-yellow-400" />
