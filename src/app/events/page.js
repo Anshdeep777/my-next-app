@@ -1,7 +1,5 @@
 import React from 'react';
-import { IoIosMegaphone } from "react-icons/io";
-import { FaAnglesDown } from "react-icons/fa6";
-import { BadgeQuestionMark } from 'lucide-react';
+import { Megaphone, ArrowDown, BadgeQuestionMark } from 'lucide-react'; // ✅ Replaced with lucide icons
 import Card from '../component/Card';
 import Card2 from '../component/Card2';
 import SlideShow from '../component/SlideShow';
@@ -40,7 +38,7 @@ const Page = () => {
           <div className="flex flex-wrap gap-4 mt-4">
             <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
               View All Events
-              <span className="inline-block ml-2 group-hover:translate-y-1 transition-transform duration-300"><FaAnglesDown /></span>
+              <span className="inline-block ml-2 group-hover:translate-y-1 transition-transform duration-300"><ArrowDown /></span>
             </button>
             <button className="px-8 py-4 bg-white/90 backdrop-blur-sm text-slate-700 font-semibold rounded-xl shadow-md hover:shadow-lg border border-slate-200 hover:border-blue-200 transition-all duration-300">
               Learn More
@@ -77,7 +75,7 @@ const Page = () => {
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 border border-slate-100 max-w-xs hidden lg:block">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xl font-bold"><IoIosMegaphone /></span>
+                  <span className="text-white text-xl font-bold"><Megaphone /></span>
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-slate-900">Upcoming Event</div>

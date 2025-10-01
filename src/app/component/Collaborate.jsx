@@ -1,7 +1,16 @@
 'use client'
 import React from 'react';
-import { Lightbulb, PenTool, BookOpen, Coffee, Sparkles, FileText, MessageSquare, Zap } from 'lucide-react';
-import { LuMessageSquareShare } from "react-icons/lu";
+import { 
+  Lightbulb, 
+  PenTool, 
+  BookOpen, 
+  Coffee, 
+  Sparkles, 
+  FileText, 
+  MessageSquare, 
+  Zap, 
+  MessageSquareShare 
+} from 'lucide-react'; // ✅ Unified everything under lucide-react
 
 const FloatingIcon = ({ Icon, className, delay = 0 }) => (
   <div 
@@ -33,10 +42,9 @@ export default function Collaborate() {
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-20"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-200 rounded-full blur-3xl opacity-20"></div>
       
-      {/* Bottom-left quarter circle */}
+      {/* Bottom-left & top-right quarter circle accents */}
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-400 rounded-tr-full opacity-30"></div>
       <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400 rounded-bl-full opacity-30"></div>
-
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center gap-8">
@@ -45,21 +53,21 @@ export default function Collaborate() {
             Want to conduct events?
           </h1>
           <h1 className="text-6xl font-bold text-slate-800 text-center">
-            conduct event with us
+            Conduct it with us
           </h1>
         </div>
 
         <button className="group relative rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 p-1 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
           <div className="rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 px-12 py-6 flex items-center justify-center gap-4">
             <div className="p-3 bg-white/20 rounded-full backdrop-blur-sm">
-             <LuMessageSquareShare  className="w-8 h-8 text-white" />
+             <MessageSquareShare className="w-8 h-8 text-white" />
             </div>
             <span className="text-2xl font-medium text-white">Contact us</span>
             <span className="text-3xl text-white/80 group-hover:translate-x-2 transition-transform">→</span>
           </div>
         </button>
 
-        {/* Subtle accent elements */}
+        {/* Dotted pulse indicator */}
         <div className="flex gap-4 mt-8">
           <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
           <div className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" style={{animationDelay: '0.2s'}}></div>
@@ -67,6 +75,7 @@ export default function Collaborate() {
         </div>
       </div>
 
+      {/* Keyframes for floating animation */}
       <style jsx>{`
         @keyframes float {
           0%, 100% {
